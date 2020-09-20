@@ -1,0 +1,46 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Vistual Stiffness caller (VScaller)
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+A R Package for Calculating Virtual Stiffness from Gene Expression Data
+
+## Installation
+
+the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("Byronxy/VScaller")
+```
+## Example
+
+```{r example}
+library(VScaller)
+```
+We subset expression data from TCGA-GBM for illustration and check it
+```{r}
+data(eSet_tcga_gbm_sub)
+eSet_tcga_gbm_sub[1:5,1:5]
+```
+Run calculation function
+```{r}
+res <- cal_VS_score(eset = eSet_tcga_gbm_sub)
+head(res[,c(1:5)])
+```
+
