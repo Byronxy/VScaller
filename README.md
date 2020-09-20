@@ -47,12 +47,9 @@ eSet_tcga_gbm_sub[1:5,1:5]
 Run calculation function
 
 ``` r
-res <- cal_VS_score(eset = eSet_tcga_gbm_sub)
+res <- cal_VS_score(eset = eSet_tcga_gbm_sub,verbose = FALSE)
 #> Warning in .local(expr, gset.idx.list, ...): 19765 genes with constant
 #> expression values throuhgout the samples.
-#> Estimating ssGSEA scores for 11 gene sets.
-#>   |                                                                              |                                                                      |   0%Using parallel with 8 cores
-#>   |                                                                              |=======                                                               |  10%  |                                                                              |==============                                                        |  20%  |                                                                              |=====================                                                 |  30%  |                                                                              |============================                                          |  40%  |                                                                              |===================================                                   |  50%  |                                                                              |==========================================                            |  60%  |                                                                              |=================================================                     |  70%  |                                                                              |========================================================              |  80%  |                                                                              |===============================================================       |  90%  |                                                                              |======================================================================| 100%
 head(res[,c(1:5)])
 #>            sample Virtual_stiffness GO_EXTRACELLULAR_MATRIX_ASSEMBLY
 #> 1 TCGA-02-0047-01          2.033695                         2.080860

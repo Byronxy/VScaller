@@ -40,7 +40,7 @@ eSet_tcga_gbm_sub[1:5,1:5]
 ```
 Run calculation function
 ```{r}
-res <- cal_VS_score(eset = eSet_tcga_gbm_sub)
+res <- cal_VS_score(eset = eSet_tcga_gbm_sub,verbose = FALSE)
 head(res[,c(1:5)])
 ```
 

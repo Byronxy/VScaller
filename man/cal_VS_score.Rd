@@ -10,6 +10,8 @@ cal_VS_score(eset = NULL, method = "ssgsea", ...)
 \item{eset}{a matrix or dataframe (row: gene symbal id, col: sample id) (transcriptome data: CPM, TPM, RPKM, FPKM, etc.)}
 
 \item{method}{method in GSVA, default 'ssgsea'}
+
+\item{...}{other parameters in GSVA package}
 }
 \value{
 a data frame

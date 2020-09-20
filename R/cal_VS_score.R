@@ -2,6 +2,7 @@
 #' Function for calculating virtual stiffness score
 #' @param eset a matrix or dataframe (row: gene symbal id, col: sample id) (transcriptome data: CPM, TPM, RPKM, FPKM, etc.)
 #' @param method method in GSVA, default 'ssgsea'
+#' @param ... other parameters in GSVA package
 #' @return a data frame
 #' @export
 #' @author Yi Xiong
