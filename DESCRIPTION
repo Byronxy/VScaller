@@ -5,6 +5,14 @@ Version: 0.1.0
 Author: Yi Xiong, Hongwei Liu, Siyi Wanggou
 Maintainer: Yi Xiong <xiongyi123@csu.edu.cn>
 Description: Computational Pipeline for Calculating Virtual Stiffness from Gene Expression Data
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 3.5)
+Imports: 
+    GSVA,
+    dplyr (>= 0.8.3),
+    magrittr,
+    tibble
+RoxygenNote: 7.1.0
